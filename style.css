@@ -1,0 +1,78 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: hsl(210, 46%, 95%);
+    height: 100vh;
+    padding: 15rem 2rem;
+}
+
+p {
+    color: hsl(217, 19%, 35%);
+}
+
+.article-preview {
+    background-color: white;
+    border-radius: 1rem;
+    margin: auto;
+    max-width: 55%;
+    display: flex;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.preview{
+    padding: 10px 30px 20px;
+}
+
+.content .headline {
+    font-size: 150%;
+    font-weight: 700;
+}
+
+.author{
+    display: flex;
+    position: relative;
+}
+
+.author-image {
+    margin-top: 10px;
+    width: 36px;
+    height: 36px;
+    background-image: url(./images/avatar-michelle.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.author-info {
+    margin: 10px 15px 0;
+}
+
+.author-info p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.author-info .author-name{
+    font-weight: 700;
+}
+
+.share-btn button {
+    width: 30px;
+    height: 30px;
+    color: hsl(210, 46%, 95%);
+    background-image: url(./images/icon-share.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: 13px;
+}
+
