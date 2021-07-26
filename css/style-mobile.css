@@ -62,7 +62,7 @@
         font-weight: 700;
     }
     
-    .share-btn button {
+    .share-to-socialmedia .share-btn {
         width: 30px;
         height: 30px;
         color: hsl(210, 46%, 95%);
