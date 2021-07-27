@@ -16,7 +16,7 @@
         background-color: white;
         border-radius: 1rem;
         margin: auto;
-        max-width: 85%;
+        width: 355px;
     }
     
     .image img {
@@ -25,8 +25,8 @@
         border-radius: 1rem 1rem 0 0;
     }
     
-    .preview{
-        padding: 10px 30px 20px;
+    .content{
+        padding: 10px 30px 10px;
     }
     
     .content .headline {
@@ -34,13 +34,17 @@
         font-weight: 700;
     }
     
-    .author{
+    .wrap{
         display: flex;
         position: relative;
     }
+
+    .author {
+        margin: 15px 30px 15px;
+        display: flex;
+    }
     
     .author-image {
-        margin-top: 10px;
         width: 36px;
         height: 36px;
         background-image: url(../images/avatar-michelle.jpg);
@@ -50,7 +54,7 @@
     }
     
     .author-info {
-        margin: 10px 15px 0;
+        margin: 0 15px 0;
     }
     
     .author-info p {
@@ -62,7 +66,7 @@
         font-weight: 700;
     }
     
-    .share-to-socialmedia .share-btn {
+    .share-popup .share-btn {
         width: 30px;
         height: 30px;
         color: hsl(210, 46%, 95%);
@@ -72,7 +76,50 @@
         border: none;
         border-radius: 100%;
         position: absolute;
-        right: 0;
-        top: 13px;
+        right: 30px;
+        top: 18px;
+    }    
+
+    /* The actual popup (appears on top) */
+    .share-popup .popup-element {
+        width: 295px;
+        height: 66px;
+        background-color: hsl(217, 19%, 35%);
+        border-radius: 0 0 1rem 1rem;
+        padding: 0 30px;
+        align-items: center;
+        display: flex;
+
+        visibility: hidden;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .popup-element p {
+        color: hsl(212, 23%, 69%);
+        letter-spacing: 5px;
+        margin-right: 10px;
+    }
+
+    i {
+        margin: 0 5px;
+    }
+
+    .fab {
+        color: white;
+    }
+  
+    /* Popup arrow */
+  
+    /* Toggle this class when clicking on the popup container (hide and show the popup) */
+    .share-popup .show {
+        visibility: visible;
+    }
+
+    .share-popup .show-btn {
+        visibility: visible;
+        z-index: 1;
     }
 }

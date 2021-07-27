@@ -16,7 +16,8 @@
         background-color: white;
         border-radius: 1rem;
         margin: auto;
-        max-width: 55%;
+        width: 700px;
+        max-width: 90%;
         display: flex;
     }
     
@@ -26,8 +27,8 @@
         border-radius: 1rem 0 0 1rem;
     }
     
-    .preview{
-        padding: 10px 30px 20px;
+    .content{
+        padding: 10px 30px 10px;
     }
     
     .content .headline {
@@ -35,13 +36,17 @@
         font-weight: 700;
     }
     
-    .author{
+    .wrap{
         display: flex;
         position: relative;
     }
+
+    .author {
+        margin: 15px 30px 15px;
+        display: flex;
+    }
     
     .author-image {
-        margin-top: 10px;
         width: 36px;
         height: 36px;
         background-image: url(../images/avatar-michelle.jpg);
@@ -51,7 +56,7 @@
     }
     
     .author-info {
-        margin: 10px 15px 0;
+        margin: 0 15px 0;
     }
     
     .author-info p {
@@ -73,16 +78,23 @@
         border: none;
         border-radius: 100%;
         position: absolute;
-        right: 0;
-        top: 13px;
-    }
-    
+        right: 30px;
+        top: 18px;
+    }    
+
+    /* The actual popup (appears on top) */
     .share-popup .popup-element {
         background-color: hsl(217, 19%, 35%);
         border-radius: 7px;
         padding: 0 20px;
         align-items: center;
         display: flex;
+
+        visibility: hidden;
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        right: -47px;
     }
 
     .popup-element p {
@@ -97,21 +109,6 @@
 
     .fab {
         color: white;
-    }
-
-    /* The actual popup (appears on top) */
-    .share-popup .popup-element {
-        background-color: hsl(217, 19%, 35%);
-        border-radius: 7px;
-        padding: 0 20px;
-        align-items: center;
-        display: flex;
-
-        visibility: hidden;
-        position: absolute;
-        z-index: 1;
-        bottom: 100%;
-        right: -77px;
     }
   
     /* Popup arrow */
@@ -129,18 +126,9 @@
     /* Toggle this class when clicking on the popup container (hide and show the popup) */
     .share-popup .show {
         visibility: visible;
-        -webkit-animation: fadeIn 1s;
-        animation: fadeIn 1s
     }
-  
-    /* Add animation (fade in the popup) */
-    @-webkit-keyframes fadeIn {
-        from {opacity: 0;}
-        to {opacity: 1;}
-    }
-  
-    @keyframes fadeIn {
-        from {opacity: 0;}
-        to {opacity:1 ;}
+
+    #btn2 {
+        display: none;
     }
 }
