@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/article-preview-with-responsive-design-36NJP0mXc)
-- Live Site URL: [Add live site URL here](https://vercel.com/liam-99/article-preview-component-master)
+- Solution URL: [https://www.frontendmentor.io/solutions/article-preview-with-responsive-design-36NJP0mXc]
+- Live Site URL: [https://article-preview-component-master-eight-delta.vercel.app/]
 
 ## My process
 
